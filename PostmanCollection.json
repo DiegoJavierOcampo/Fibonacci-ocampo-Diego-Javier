@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "f8b25588-ae10-421b-b712-6b746d0f5265",
+		"name": "Collection_Postman_Ocampo_Diego",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23680184"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/fibonacci?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/fibonacci?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fibonacci"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "Devuelve los primeros 20 numeros de la serie fibonacci"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/fibonacci?range=7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/fibonacci?range=7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fibonacci"
+					],
+					"query": [
+						{
+							"key": "range",
+							"value": "7",
+							"description": "Define un rango límite por query"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "Devuelve el listado completo de usuarios"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/2?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/2?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"2"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "Devuelve usuario segun id en parámetro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?nombre=Marcelo&apellido=Gallardo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users?nombre=Marcelo&apellido=Gallardo",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Marcelo"
+						},
+						{
+							"key": "apellido",
+							"value": "Gallardo",
+							"description": "Devuelve usuario por nombre y apellido insertos por query"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?nombre=99&apellido=Gallardo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users?nombre=99&apellido=Gallardo",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "99"
+						},
+						{
+							"key": "apellido",
+							"value": "Gallardo",
+							"description": "Devuelve error por tipo de dato ingresado en nombre"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?nombre=Marce&apellido=Gallardo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users?nombre=Marce&apellido=Gallardo",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Marce"
+						},
+						{
+							"key": "apellido",
+							"value": "Gallardo",
+							"description": "Devuelve usuario no encontrado por nombre mal escrito"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?nombre=Pedro&apellido=Roldán&dni=32354508",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users?nombre=Pedro&apellido=Roldán&dni=32354508",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Pedro"
+						},
+						{
+							"key": "apellido",
+							"value": "Roldán"
+						},
+						{
+							"key": "dni",
+							"value": "32354508",
+							"description": "Inserta un nuevo usuario"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?id=8&nombre=dede&apellido=grgrgr&dni=54254252",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users?id=8&nombre=dede&apellido=grgrgr&dni=54254252",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						},
+						{
+							"key": "nombre",
+							"value": "dede"
+						},
+						{
+							"key": "apellido",
+							"value": "grgrgr"
+						},
+						{
+							"key": "dni",
+							"value": "54254252",
+							"description": "Inserta un nuevo usuario, ignorando el Id que se envía por el body."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users?nombre=Julian&apellido=Sosa&dni=perro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users?nombre=Julian&apellido=Sosa&dni=perro",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Julian"
+						},
+						{
+							"key": "apellido",
+							"value": "Sosa"
+						},
+						{
+							"key": "dni",
+							"value": "perro",
+							"description": "Prueba validación por tipo de datos no válidos. El Dni debe ser numérico"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/3?nombre=Julieta&apellido=Diaz&dni=43243222",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/3?nombre=Julieta&apellido=Diaz&dni=43243222",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"3"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Julieta"
+						},
+						{
+							"key": "apellido",
+							"value": "Diaz"
+						},
+						{
+							"key": "dni",
+							"value": "43243222",
+							"description": "Actualiza usuario, tomando id por parámetro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/25?nombre=Jose&apellido=bianci&dni=53434327",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/25?nombre=Jose&apellido=bianci&dni=53434327",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"25"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Jose"
+						},
+						{
+							"key": "apellido",
+							"value": "bianci"
+						},
+						{
+							"key": "dni",
+							"value": "53434327",
+							"description": "No actualiza usuario ya que el id no está disponible en el array users"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/1?",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/1?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"1"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "Elimina el usuario indicado por id en parámetro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/30?",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/30?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"30"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "No elimina el usuario, ya que no encuentra coincidencia de id enviado y existente"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/h?",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/h?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"h"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "Valida que el tipo de Id ingresado sea de tipo numérico"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
